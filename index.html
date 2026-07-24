@@ -1271,8 +1271,8 @@ function findBuyer() {
 
 function generateOffer() {
   const count = photos.length;
-  const min = count <= 3 ? 30664 : 153321;
-  const max = count <= 3 ? 153321 : 513625;
+  const min = count <= 3 ? 153321 : 400000;
+  const max = count <= 3 ? 153321 : 400000;
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
